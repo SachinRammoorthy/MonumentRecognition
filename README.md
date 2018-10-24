@@ -1,12 +1,9 @@
 # MonumentRecognition
 A TF model that recognizes 5 monuments from images. Built with images scraped via Google Images
 
-MonumentRecognition
-A TF model that recognizes 5 monuments from images. Built with images scraped via Google Images
-
 This is a TensorFlow model that classifies a given image of the Taj Mahal, Statue of Liberty, Eiffel Tower, Big Ben clock, or the Sydney Opera House. In addition, all images used to train the model are from Google Images and are free of copyright (filtered out using the tool on Google Images)
 
-This model was created using transfer learning.
+This model was created using transfer learning, since deep learning from scratch can take a lot of time and resources.
 
 Procedure:
 1. Search up “Taj Mahal” on Google Images. Scroll down the page upto a point where the images start to get irrelevant.
@@ -44,5 +41,15 @@ bigben (score = 0.00032)
 ```
 
 The class with the highest numerical value is most likely the monument.
+
+
+Documentation/Useful tutorials:
+1. Tensorflow (VERY USEFUL!) – https://www.tensorflow.org/hub/tutorials/image_retraining
+2. Scraping images from Google Images search – https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/
+
+
+The primary machine learning part of this project is contained within the `scripts` directory. There are 9 python scripts. The model can be tested by running `label_image.py` in the format mentioned above. The first phase analyzes all the images on disk and calculates and caches the bottleneck values for each of them. 'Bottleneck' is an informal term used for the layer just before the final output layer that actually does the classification.
+
+Watch a demo of this project here – https://youtu.be/Au9WnkyXNA4
 
 Cheers!
