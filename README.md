@@ -50,6 +50,6 @@ Documentation/Useful tutorials:
 
 The primary machine learning part of this project is contained within the `scripts` directory. There are 9 python scripts. The model can be tested by running `label_image.py` in the format mentioned above. The first phase analyzes all the images on disk and calculates and caches the bottleneck values for each of them. 'Bottleneck' is an informal term used for the layer just before the final output layer that actually does the classification.
 
-Watch a demo of this project here – https://youtu.be/Au9WnkyXNA4
+## Watch a demo of this project here – https://youtu.be/Au9WnkyXNA4
 
 Cheers!
